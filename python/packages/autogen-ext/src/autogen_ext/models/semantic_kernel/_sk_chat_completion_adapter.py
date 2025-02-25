@@ -359,6 +359,9 @@ class SKChatCompletionAdapter(ChatCompletionClient):
                     full_name = function_name
 
                 if item.id is None:
+                    # Yong Hack: If ID is None, hardcode a unique ID based on the function name
+                    item.id = f"{plugin_name}-{function_name}"
+                if not item.id:
                     raise ValueError("Function call ID is required")
 
                 if isinstance(item.arguments, Mapping):

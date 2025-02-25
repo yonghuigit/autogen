@@ -199,3 +199,9 @@ artifacts
 
 # project data
 registry.json
+python/my-app/alembic.ini
+python/my-app/autogen0404.db
+python/my-app/alembic/env.py
+python/my-app/alembic/README
+python/my-app/alembic/script.py.mako
+python/my-app/alembic/versions/ffa46b252555_initial_schema.py
